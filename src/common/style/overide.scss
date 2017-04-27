@@ -1,0 +1,228 @@
+@import './_meituan.scss';
+.layout-sidebar h1 {
+    background: $primary-color;
+}
+
+/* 盒子模型 */
+@for $i from -10 to 10 {
+    .mt#{$i*5} {
+        margin-top: $i*5px;
+    }
+    .mr#{$i*5} {
+        margin-right: $i*5px;
+    }
+    .mb#{$i*5} {
+        margin-bottom: $i*5px;
+    }
+    .ml#{$i*5} {
+        margin-left: $i*5px;
+    }
+    .pt#{$i*5} {
+        padding-top: $i*5px;
+    }
+    .pr#{$i*5} {
+        padding-right: $i*5px;
+    }
+    .pb#{$i*5} {
+        padding-bottom: $i*5px;
+    }
+    .pl#{$i*5} {
+        padding-left: $i*5px;
+    }
+    .m#{$i*5} {
+        margin: $i*5px;
+    }
+    .p#{$i*5} {
+        padding: $i*5px;
+    }
+}
+
+@for $i from 0 to 11 {
+    .w#{$i*25} {
+        width: $i*25px;
+    }
+}
+
+/* text color */
+.text-danger{
+    color:$font-danger-color;
+}
+.text-warning{
+    color:$font-warning-color;
+}
+.text-info{
+    color:$font-info-color;
+}
+.text-success{
+    color:$font-success-color;
+}
+.text-primary{
+    color:$font-primary-color;
+}
+.text-light{
+    color:$font-default-light-color;
+}
+.text-lighter{
+    color:$font-default-lighter-color;
+}
+
+.text-left{
+    text-align: left!important;
+}
+.text-right{
+    text-align: right!important;
+}
+
+/* col width */
+.col-input-mini {
+    width: 4em;
+}
+.col-input-s {
+    width: 8em;
+}
+.col-input-m {
+    width: 14em;
+}
+.col-input-l {
+    width: 24em;
+}
+.col-input-number-2 {
+    width: 2em;
+}
+.col-input-number-4 {
+    width: 4em;
+}
+.col-input-number-5 {
+    width: 5em;
+}
+.col-input-number-6 {
+    width: 6em;
+}
+.col-input-number-8 {
+    width: 8em;
+}
+.col-input-number-10 {
+    width: 10em;
+}
+
+/* font-size */
+.font-small {
+    font-size: 12px;
+}
+.font-default {
+    font-size: 14px;
+}
+.font-medium {
+    font-size: 18px;
+}
+.font-large {
+    font-size: 24px;
+}
+.font-huge {
+    font-size: 34px;
+}
+
+/*others*/
+.xigua-layout{
+    background: none!important;
+}
+a.disabled, a[disabled] {
+    color: $font-default-lighter-color;
+    &:visited, &:active, &:focus, &:hover{
+        text-decoration: none;
+        cursor: not-allowed;
+    }
+}
+
+dl {
+    margin: 5px 0;
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        -webkit-margin-start: 20px;
+    }
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.font-normal{
+    font-weight: normal;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.vertical-top{
+    vertical-align: top;
+}
+.vertical-middle{
+    vertical-align: middle!important;
+}
+
+.font-medium[class*=" icon-"], .font-medium[class^=icon-] {
+    vertical-align: -3px;
+}
+table {
+    table-layout: auto;
+}
+table .disabled{
+    background: $gray-lighter-color;
+}
+
+.table.tabel-left td, .table.tabel-left th {
+    text-align: left;
+}
+.table.tabel-right td, .table.tabel-right th {
+    text-align: right;
+}
+
+
+.bordered{
+    border: 1px solid $input-border;
+}
+
+.label.label-single{
+    padding: 0.2em 0.3em;
+}
+
+/* 盒子模型 */
+@for $i from 0 to 10 {
+    textarea[rows*="#{$i}"]{
+        height: $i*22 + 14px;
+    }
+}
+
+// 清除浮动
+.clear::after {
+    clear: both;
+    content: '';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+// 必填项标识
+.necessary:before {
+    content: '*';
+    font-size: 15px;
+    color:$font-danger-color;
+    position: relative;
+    top: 2px;
+    left: -2px;
+}
+// 添加border bottom
+.bor-bottom{
+    border-bottom: 1px solid $nav-tabs-border-color;
+}
+// form-group 下 control-label 对应的文字
+.form-group .control-font{
+    line-height: 32px;
+}
