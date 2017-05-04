@@ -23,8 +23,8 @@ import {getCookie, setCookie} from '../../../common/resource/js/method.js';
 export default{
     data () {
         return {
-            clockL: getCookie('clockLeft') || '100px',
-            clockT: getCookie('clockTop') || 0,
+            clockL: getCookie('clockLeft') || '600px',
+            clockT: getCookie('clockTop') || '200px',
             nowDate: new Date(),
             options: {
                 week: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],

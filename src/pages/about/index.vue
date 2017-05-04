@@ -1,18 +1,18 @@
 <template>
 	<div>
-		<s-signature></s-signature>
-		<h1>OFFICE</h1>
+		<about-us></about-us>
 	</div>
 </template>
 <script>
-import sSignature from '../../common/components/signature.vue'
+import aboutUs from './components/about.vue';
+
 export default{
 	data () {
 		return {
 		};
 	},
 	components: {
-		'sSignature': sSignature
+		'aboutUs': aboutUs
 	}
 };
 </script>

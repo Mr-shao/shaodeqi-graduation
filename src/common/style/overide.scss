@@ -1,10 +1,16 @@
 @import './_meituan.scss';
+$theme-color: #eef1f6 !default;
+
 .layout-sidebar h1 {
     background: $primary-color;
 }
 
+.primary-color {
+    background: $primary-color;
+}
+
 /* 盒子模型 */
-@for $i from -10 to 10 {
+@for $i from -20 to 20 {
     .mt#{$i*5} {
         margin-top: $i*5px;
     }
@@ -63,7 +69,7 @@
     color:$font-default-light-color;
 }
 .text-lighter{
-    color:$font-default-lighter-color;
+    color:$font-default-lighter-color;      
 }
 
 .text-left{
@@ -71,6 +77,9 @@
 }
 .text-right{
     text-align: right!important;
+}
+.text-center{
+    text-align: center !important;
 }
 
 /* col width */
@@ -222,7 +231,34 @@ table .disabled{
 .bor-bottom{
     border-bottom: 1px solid $nav-tabs-border-color;
 }
+// 添加border right
+.bor-right{
+    border-right: 1px solid $nav-tabs-border-color;
+}
 // form-group 下 control-label 对应的文字
 .form-group .control-font{
     line-height: 32px;
+}
+
+.padding0{
+    padding: 0 !important;
+}
+
+.theme-color{
+    background: #eef1f6;
+}
+.danger-color{
+    background: $font-danger-color;
+}
+.warning-color{
+    background: $font-warning-color;
+}
+.info-color{
+    background: $font-info-color;
+}
+.success-color{
+    background: $font-success-color;
+}
+.primary-color{
+    background: $font-primary-color;
 }

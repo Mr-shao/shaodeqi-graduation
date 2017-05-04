@@ -1,6 +1,10 @@
 import home from './pages/home/index.vue';
 import tool from './pages/tool/index.vue';
 import office from './pages/office/index.vue';
+import teachers from './pages/teachers/index.vue';
+import about from './pages/about/index.vue';
+import sign from './common/components/signature.vue';
+import cert from './common/components/cert.vue';
 
 const routes = [
 	{
@@ -14,6 +18,26 @@ const routes = [
 	{
 		path: '/office',
 		component: office
+	},
+	{
+		path: '/sign',
+		component: sign
+	},
+	{
+		path: '/teachers',
+		component: teachers
+	},
+	{
+		path: '/about',
+		component: about
+	},
+	{
+		path: '/cert',
+		component: cert
+	},
+	{
+		path: '/',
+		redirect: '/home'
 	},
 ];
 

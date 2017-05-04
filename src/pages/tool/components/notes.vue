@@ -16,8 +16,8 @@ import { getCookie, setCookie, stopBubble, stopDefault } from '../../../common/r
 export default {
     data () {
         return {
-            labelL: getCookie('labelLeft') || 0,
-            labelT: getCookie('labelTop') || '200px',
+            labelL: getCookie('labelLeft') || '600px',
+            labelT: getCookie('labelTop') || '400px',
             labelText: unescape(getCookie('labelText')) || ''
         };
     },

@@ -1,7 +1,7 @@
 <template>
     <div class="calculator clear" 
         :style="{'left': calculatorL, 'top': calculatorT}" 
-        @mousedown="mousedown" 
+        @mousedown="mousedown"
         @mouseup="mouseup">
         <div class="col-xs-12 mt10 bor-bottom clear">
             <textarea class="screen" 
@@ -31,7 +31,7 @@ import { getCookie, setCookie, stopBubble } from '../../../common/resource/js/me
 export default {
     data () {
         return {
-            calculatorL: getCookie('calculatorLeft') || 0,
+            calculatorL: getCookie('calculatorLeft') || '100px',
             calculatorT: getCookie('calculatorTop') || '200px',
             keyFlag: true,
             btns: ['1', '2', '3', '0', '4', '5', '6', '.', '7', '8', '9', '=', 'x', '÷', '-', '+', '(', ')', '⟵', '清零'],
@@ -92,7 +92,7 @@ export default {
         padding: 5px;
         width: 275px;
         border: 2px solid #383D56;
-        border-radius: 2px;
+        border-radius: 10px;
         background: rgb(54,133,144);
         box-shadow: 9px 9px 5px -5px #ccc;
     }

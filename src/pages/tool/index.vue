@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="mt50">
 		<s-calculator></s-calculator>
 		<s-clock></s-clock>
 		<s-notes></s-notes>
