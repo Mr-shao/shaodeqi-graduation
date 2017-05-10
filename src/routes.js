@@ -5,6 +5,7 @@ import teachers from './pages/teachers/index.vue';
 import about from './pages/about/index.vue';
 import contact from './pages/contact/index.vue';
 import notFound from './pages/not-found/index.vue';
+import action from './pages/action/index.vue';
 import sign from './common/components/signature.vue';
 import cert from './common/components/cert.vue';
 
@@ -41,6 +42,9 @@ const routes = [
 		path: '/cert',
 		component: cert
 	},
+	{
+		path: '/action',
+		component: action
 	{
 		path: '*',
 		component: notFound
