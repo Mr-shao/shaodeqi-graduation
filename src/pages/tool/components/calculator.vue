@@ -72,8 +72,8 @@ export default {
             var lastL = this.calculatorL;
             var lastT = this.calculatorT;
             document.onmousemove = (a) => {
-                this.calculatorL = (parseInt(lastL) + a.clientX - e.clientX) + 'px';
-                this.calculatorT = (parseInt(lastT) + a.clientY - e.clientY) + 'px';
+                this.calculatorL = (parseInt(lastL) + a.pageX - e.pageX) + 'px';
+                this.calculatorT = (parseInt(lastT) + a.pageY - e.pageY) + 'px';
             };
         },
         mouseup (e) {

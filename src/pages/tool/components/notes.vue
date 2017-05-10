@@ -29,8 +29,8 @@ export default {
             var lastL = this.labelL;
             var lastT = this.labelT;
             document.onmousemove = (a) => {
-                this.labelL = (parseInt(lastL) + a.clientX - e.clientX) + 'px';
-                this.labelT = (parseInt(lastT) + a.clientY - e.clientY) + 'px';
+                this.labelL = (parseInt(lastL) + a.pageX - e.pageX) + 'px';
+                this.labelT = (parseInt(lastT) + a.pageY - e.pageY) + 'px';
             };
         },
         mouseup (e) {

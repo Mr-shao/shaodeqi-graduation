@@ -1,5 +1,5 @@
 <template>
-	<div style="height: 800px">
+	<div style="height: 800px" id="tool">
 		<s-calculator></s-calculator>
 		<s-clock></s-clock>
 		<s-notes></s-notes>
@@ -22,4 +22,7 @@ export default{
 };
 </script>
 <style>
+	#tool{
+		/*background: black;*/
+	}
 </style>

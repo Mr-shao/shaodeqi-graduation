@@ -42,8 +42,8 @@ export default{
             var lastL = this.clockL;
             var lastT = this.clockT;
             document.onmousemove = (a) => {
-                this.clockL = (parseInt(lastL) + a.clientX - e.clientX) + 'px';
-                this.clockT = (parseInt(lastT) + a.clientY - e.clientY) + 'px';
+                this.clockL = (parseInt(lastL) + a.pageX - e.pageX) + 'px';
+                this.clockT = (parseInt(lastT) + a.pageY - e.pageY) + 'px';
             };
         },
         mouseup (e) {
