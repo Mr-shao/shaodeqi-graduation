@@ -9,7 +9,8 @@
     <div class="main clear"></div>
     <footer class="s-footer">© 2017
       <span>京ICP备17017576号<img src="./common/resource/img/beian.png" alt=""></span>
-      <router-link to="/cert">证书</router-link>
+      <router-link to="/cert">【网站证书】</router-link>
+      <a href="https://cp.aliyun.com/#/biLogStatSiteHome" target="_blank">【站长管理】</a>
       <i class="ml50">联系电话：17190170788</i> 
     </footer>
   </div>
