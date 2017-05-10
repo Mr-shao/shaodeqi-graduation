@@ -50,7 +50,6 @@ let IsPC = function () {
     var Agents = ["Android", "iPhone",
                 "SymbianOS", "Windows Phone",
                 "iPad", "iPod"];
-    console.log(userAgentInfo);
     var flag = true;
     for (var v = 0; v < Agents.length; v++) {
         if (userAgentInfo.indexOf(Agents[v]) > 0) {

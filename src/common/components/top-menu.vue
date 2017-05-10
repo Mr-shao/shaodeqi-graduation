@@ -19,12 +19,14 @@
 	        <el-menu-item index="about">
 	        	<span :class="{'is-phone': !IsPC}">关于我们</span>
 	        </el-menu-item>
-	        <!-- <el-menu-item index="contact"><span></span>联系我们</el-menu-item> -->
-        	<el-menu-item index="">
-        		<a href="contact" style="text-decoration: none">
+	        <el-menu-item index="contact">
+	        	<span :class="{'is-phone': !IsPC}">联系我们</span>
+	        </el-menu-item>
+        	<!-- <el-menu-item index="">
+        		<a href="#/contact" target="_self" class="p5" style="text-decoration: none">
         			<span :class="{'is-phone': !IsPC}">联系我们</span>
         		</a>
-    		</el-menu-item>
+    		</el-menu-item> -->
 	    </el-menu>
 	</div>
 </template>

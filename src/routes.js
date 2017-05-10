@@ -13,46 +13,55 @@ const routes = [
 	// 主页
 	{
 		path: '/home',
+		name: 'home',
 		component: home
 	},
 	// 工具桌面
 	{
 		path: '/tool',
+		name: 'tool',
 		component: tool
 	},
 	// 办公
 	{
 		path: '/office',
+		name: 'office',
 		component: office
 	},
 	// 个人签名
 	{
 		path: '/sign',
+		name: 'sign',
 		component: sign
 	},
 	// 师资力量
 	{
 		path: '/teachers',
+		name: 'teachers',
 		component: teachers
 	},
 	// 关于我们
 	{
 		path: '/about',
+		name: 'about',
 		component: about
 	},
 	// 联系我们
 	{
 		path: '/contact',
+		name: 'contact',
 		component: contact
 	},
 	// 证书
 	{
 		path: '/cert',
+		name: 'cert',
 		component: cert
 	},
 	// 最新活动
 	{
 		path: '/action',
+		name: 'action',
 		component: action
 	},
 	// 未知页面
