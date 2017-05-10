@@ -4,6 +4,7 @@ import App from './App.vue';
 import validator from 'vee-validate';
 import 'element-ui/lib/theme-default/index.css';
 import ElementUI from 'element-ui';
+// location.href="http://atitle.cn/#/home";
 
 Vue.use(ElementUI);
 Vue.use(validator);
