@@ -5,7 +5,11 @@ import routes from './routes';
 Vue.use(Router);
 
 const router = new Router({
-	routes
+	mode: 'history',
+	routes,
 });
+// router.beforeEach((to, from, next) => {
+//   next();
+// })
 
 export default router;

@@ -45,16 +45,27 @@ let stopDefault = function (e) {
     }
     return false;
 };
-let number = 1;
-let plusNumber = function () {
-    number++;
+let IsPC = function () {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    console.log(userAgentInfo);
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
 };
+
 export {
     getCookie,
     setCookie,
     clearCookie,
     stopBubble,
     stopDefault,
-    number,
-    plusNumber
+    IsPC
 };
