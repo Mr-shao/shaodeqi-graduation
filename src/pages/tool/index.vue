@@ -22,7 +22,4 @@ export default{
 };
 </script>
 <style>
-	#tool{
-		/*background: black;*/
-	}
 </style>

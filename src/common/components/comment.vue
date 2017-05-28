@@ -1,7 +1,6 @@
 <template>
 	<div id="COMMENT" ref="COMMENT">
 		<div id="SOHUCS" style="margin: 30px 0"></div>
-		<!-- <script src="../resource/js/changyan.js" charset="UTF-8"></script> -->
 	</div>
 </template>
 <script type="text/javascript">

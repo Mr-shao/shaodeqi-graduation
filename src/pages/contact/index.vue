@@ -1,15 +1,18 @@
 <template>
 	<div>
+		<h2 class="text-info">地图：</h2>
+		<s-map></s-map>
+		<h2 class="text-info">留言：</h2>
+		<s-comment></s-comment>
 		<div class="text-center">
 			<h1>鼓励一下</h1>
 			<img src="../../common/resource/img/help.png" width="200px" alt="">
-			<h1>既然来了，留个言再走吧！</h1>
 		</div>
-		<s-comment></s-comment>
 	</div>
 </template>
 <script>
 import sComment from '../../common/components/comment.vue';
+import sMap from './components/map.vue';
 
 export default{
 	data () {
@@ -17,7 +20,8 @@ export default{
 		};
 	},
 	components: {
-		'sComment': sComment
+		sComment,
+		sMap
 	}
 };
 </script>
