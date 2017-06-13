@@ -13,7 +13,7 @@ import imgPage from './components/img-page.vue';
 import sNews from './components/news.vue';
 import navBar from './components/nav-bar.vue';
 import sTelephone from './components/telephone.vue';
-import sAbout from '../about/index.vue';
+import sAbout from '../about/components/about.vue';
 import sideBar from '../../common/components/side-bar.vue';
 export default{
 	components: {

@@ -12,7 +12,6 @@
 </template>
 <script type="text/javascript" src='http://webapi.amap.com/maps?v=1.3&key=2e2a60924ebc5be0731e134fadd880ea'></script>
 <script>
-    import '../js/map.js';
     export default {
         mounted () {
             var map = new AMap.Map('mapDiv',{
@@ -32,7 +31,7 @@
         }
     }
 </script>
-<style>
+<style  lang="scss" scoped>
     .map-border{
         border: 2px solid #20A0FF;
     }

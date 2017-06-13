@@ -1,7 +1,7 @@
 <template>
     <div class="clear p15 about m15">
-        <div style="width: 38%; text-align: center"  class="mt15 mr30 pull-left">
-            <img src="../../../common/resource/img/sdz2.png" alt="">
+        <div style="width: 30%; text-align: center"  class="mt15 mr30 pull-left">
+            <img src="../../../common/resource/img/sdz2.png" width="100%" alt="">
         </div>
         <div class="mt30">
             <h2>&nbsp;&nbsp;&nbsp;&nbsp;好学生教育创办于2014年，前身为哈尔滨”大学生家教团队“，由哈尔滨各高校200多名优秀大学生组成，为莘莘学子提供优质的上门家教服务。</h2>
@@ -11,6 +11,7 @@
         </div>
         <div class="pull-right">
             <s-signature></s-signature>
+            <img src="../../../common/resource/img/logo.png" width="40px" alt="" class="pull-right">
         </div>
     </div>
 </template>
