@@ -1,11 +1,13 @@
 import home from './pages/home/index.vue';
 import tool from './pages/tool/index.vue';
 import office from './pages/office/index.vue';
+import student from './pages/student/index.vue';
 import teachers from './pages/teachers/index.vue';
 import about from './pages/about/index.vue';
 import contact from './pages/contact/index.vue';
 import notFound from './pages/not-found/index.vue';
 import action from './pages/action/index.vue';
+import school from './pages/school/index.vue';
 import sign from './common/components/signature.vue';
 import cert from './common/components/cert.vue';
 
@@ -63,6 +65,12 @@ const routes = [
 		path: '/action',
 		name: 'action',
 		component: action
+	},
+	// 学生、家长入口
+	{
+		path: '/school',
+		name: 'school',
+		component: school
 	},
 	// 未知页面
 	{

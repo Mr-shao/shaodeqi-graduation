@@ -9,10 +9,11 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "echarts": "^3.6.2",
     "element-ui": "^1.2.9",
     "vee-validate": "^2.0.0-beta.25",
-    "vue-router": "^2.5.2",
-    "vue": "^2.2.1"
+    "vue": "^2.2.1",
+    "vue-router": "^2.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

@@ -12,10 +12,13 @@
             </textarea>
             <label class="pull-right msg mt5 text-danger">{{ msg }}</label>
             <span 
-                :class="keyFlag === true ? 'icon-minus-circle' : 'icon-plus-circle'" class="ml5" 
-                @click="keyFlag = !keyFlag"></span>
+                :class="keyFlag === true ? 'icon-minus-circle' : 'icon-plus-circle'" 
+                class="ml5 calculator-icon" 
+                @click="keyFlag = !keyFlag">
+            </span>
         </div>
-        <div class="col-xs-12 keyboard clear" v-if="keyFlag">
+        <div class="col-xs-12 keyboard clear" 
+        :style="{height: keyFlag ? '250px' : 0}">
             <div class="col-xs-3" v-for="(item, index) in btns">
                 <button 
                     class="btn" 
@@ -115,6 +118,10 @@ export default {
     div[class^="col-xs-"]{
         padding-left: 0;
         padding-right: 0;
+    }
+    .keyboard{
+        transition: all 1s ease-in-out;
+        overflow: hidden;
     }
     .btn{
         width:60px;

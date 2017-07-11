@@ -10,11 +10,11 @@
 	        <el-menu-item index="tool">
 	        	<span :class="{'is-phone': !IsPC}">工具桌面</span>
 	        </el-menu-item>
-	        <el-menu-item index="student">
-	        	<span :class="{'is-phone': !IsPC}">家长/学生入口</span>
+	        <el-menu-item index="teachers">
+	        	<span :class="{'is-phone': !IsPC}">师资力量</span>
 	        </el-menu-item>
-	        <el-menu-item index="teacher">
-	        	<span :class="{'is-phone': !IsPC}">教师入口</span>
+	        <el-menu-item index="action">
+	        	<span :class="{'is-phone': !IsPC}">最新活动</span>
 	        </el-menu-item>
 	        <el-menu-item index="about">
 	        	<span :class="{'is-phone': !IsPC}">关于我们</span>

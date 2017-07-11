@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="clear">
+  <div id="app" class="clear" v-if="$route.name != 'school'">
     <div class="container-fluid">
       <top-menu></top-menu>
       <div class="layout-main">
@@ -13,6 +13,9 @@
       <a href="https://cp.aliyun.com/#/biLogStatSiteHome" target="_blank">【站长管理】</a>
       <i class="ml50">联系电话：17190170788</i> 
     </footer>
+  </div>
+  <div v-else>
+    <router-view></router-view>    
   </div>
 </template>
 

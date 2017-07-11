@@ -231,6 +231,10 @@ table .disabled{
 .bor-bottom{
     border-bottom: 1px solid $nav-tabs-border-color;
 }
+// 添加border bottom
+.bor-bottom-dashed{
+    border-bottom: 1px dashed $nav-tabs-border-color;
+}
 // 添加border right
 .bor-right{
     border-right: 1px solid $nav-tabs-border-color;
